@@ -1,0 +1,14 @@
+    .choos{
+      margin: 20px;
+      width: 20vh;
+      background-color: #878383;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .choos:hover {
+      background-color: #878383c0;
+    }
