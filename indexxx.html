@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .choos{
+      margin: 20px;
+      width: 20vh;
+      background-color: #878383;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .choos:hover {
+      background-color: #878383c0;
+    }
+    </style>
+</head>
+<body style="margin: 100px;">
+    <center>
+    <h3>chooset any width you went</h3>
+    <div>
+        <div class="choos" id="choos1"> 412 X 300 </div>
+        <div class="choos" id="choos2">650 X 300 </div>
+        <div class="choos" id="choos3"> 850 X 300 </div>
+    </div>
+    <br>
+    <div style="width: 100%;">
+    <div id="container" style="border-style: solid;border-radius: 2%; ; width: 50%; height:200px;"></div>
+    <div class="choos1" id="choos1"></div>
+    </div>
+    <div class="choos" id="choos4"> to deletit</div>
+    </center>
+    <script>
+
+        let container = document.getElementById("container");
+
+        let choos1 = document.getElementById("choos1");
+
+        choos1.addEventListener("click", function(){
+            container.style.cssText = "width: 412px; height: 300px;border-style: solid;border-radius: 2%; ";
+
+        });
+
+
+        let container2 = document.getElementById("container");
+
+        let choos2 = document.getElementById("choos2");
+
+        choos2.addEventListener("click", function(){
+        container2.style.cssText = "width: 650px; height: 300px; border-style: solid;border-radius: 2%; ";
+});
+
+let container3 = document.getElementById("container");
+
+let choos3 = document.getElementById("choos3");
+
+choos3.addEventListener("click", function(){
+container3.style.cssText = "width: 850px; height: 300px;border-style: solid;border-radius: 2%;";
+});
+
+
+let container4 = document.getElementById("container");
+
+let choos4 = document.getElementById("choos4");
+
+choos4.addEventListener("click", function(){
+container4.style.cssText = "";
+});
+
+
+
+    </script>
+</body>
+</html>
